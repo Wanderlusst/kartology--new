@@ -7,6 +7,7 @@ var logger = require('morgan');
 var userRouter = require('./routes/user');
 var adminRouter = require('./routes/admin');
 var hbs=require('express-handlebars')
+var port= process.env.PORT || 3000
 
 var app = express();
 var fileUpload=require('express-fileupload')
